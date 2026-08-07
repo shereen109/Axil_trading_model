@@ -1,0 +1,263 @@
+{
+  "version": "v3.4_classical",
+  "timeframe": "1d",
+  "walk_forward": {
+    "n_folds": 6,
+    "avg_accuracy": 0.5552,
+    "std_accuracy": 0.0924,
+    "avg_precision": 0.464,
+    "avg_win_rate": 0,
+    "avg_profit_factor": 0,
+    "consistency_pct": 0.0,
+    "folds": [
+      {
+        "fold": 1,
+        "train_size": 351,
+        "test_size": 87,
+        "purge_size": 8,
+        "period_start": "2024-03-26 00:00:00",
+        "period_end": "2024-07-24 00:00:00",
+        "accuracy": 0.6552,
+        "precision": 0.5789,
+        "recall": 0.3333,
+        "backtest": {}
+      },
+      {
+        "fold": 2,
+        "train_size": 438,
+        "test_size": 87,
+        "purge_size": 8,
+        "period_start": "2024-07-25 00:00:00",
+        "period_end": "2024-11-22 00:00:00",
+        "accuracy": 0.6782,
+        "precision": 0.6429,
+        "recall": 0.2812,
+        "backtest": {}
+      },
+      {
+        "fold": 3,
+        "train_size": 525,
+        "test_size": 87,
+        "purge_size": 8,
+        "period_start": "2024-11-25 00:00:00",
+        "period_end": "2025-03-25 00:00:00",
+        "accuracy": 0.4828,
+        "precision": 0.2069,
+        "recall": 0.2143,
+        "backtest": {}
+      },
+      {
+        "fold": 4,
+        "train_size": 612,
+        "test_size": 87,
+        "purge_size": 8,
+        "period_start": "2025-03-26 00:00:00",
+        "period_end": "2025-07-28 00:00:00",
+        "accuracy": 0.4368,
+        "precision": 0.3492,
+        "recall": 0.7333,
+        "backtest": {}
+      },
+      {
+        "fold": 5,
+        "train_size": 699,
+        "test_size": 87,
+        "purge_size": 8,
+        "period_start": "2025-07-29 00:00:00",
+        "period_end": "2025-11-26 00:00:00",
+        "accuracy": 0.4828,
+        "precision": 0.4643,
+        "recall": 0.6341,
+        "backtest": {}
+      },
+      {
+        "fold": 6,
+        "train_size": 786,
+        "test_size": 84,
+        "purge_size": 8,
+        "period_start": "2025-11-27 00:00:00",
+        "period_end": "2026-03-24 00:00:00",
+        "accuracy": 0.5952,
+        "precision": 0.5417,
+        "recall": 0.3611,
+        "backtest": {
+          "total_trades": 1,
+          "win_rate": 0.0,
+          "profit_factor": 0.0,
+          "total_return_pct": -0.5,
+          "max_drawdown_pct": -0.86,
+          "avg_win": 0,
+          "avg_loss": 50.0,
+          "expectancy": -50.0,
+          "trades": [
+            {
+              "profit": -49.99999999999997,
+              "exit": "sl",
+              "direction": -1,
+              "entry": 4211.432615351927,
+              "exit_price": 4338.851224280498
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "holdout_last_15pct": {
+    "total_trades": 2,
+    "win_rate": 50.0,
+    "profit_factor": 1.98,
+    "total_return_pct": 0.5,
+    "max_drawdown_pct": -0.96,
+    "avg_win": 100.0,
+    "avg_loss": 50.5,
+    "expectancy": 24.75,
+    "trades": [
+      {
+        "profit": 100.00000000000004,
+        "exit": "tp",
+        "direction": -1,
+        "entry": 4323.842544502801,
+        "exit_price": 3949.5475445028005
+      },
+      {
+        "profit": -50.49999999999994,
+        "exit": "sl",
+        "direction": -1,
+        "entry": 4024.2224515086,
+        "exit_price": 4266.228165794314
+      }
+    ]
+  },
+  "config": {
+    "interval": "1d",
+    "years": 10,
+    "buy_threshold": 0.6,
+    "sell_threshold": 0.4,
+    "fold_buy_threshold": 0.52,
+    "fold_sell_threshold": 0.48,
+    "resample_rule": "1B",
+    "minutes_per_candle": 1440,
+    "active_for_live": true,
+    "min_candles": 100,
+    "horizon": 3,
+    "pattern_window": 10,
+    "min_return": 0.008,
+    "htf_resample": "W-FRI",
+    "zigzag_pct": 0.008,
+    "pattern_max_age": 10,
+    "confirmation_bars": 3,
+    "higher_tf": "1W",
+    "min_pattern_quality": 0.25,
+    "confidence_threshold": 0.7,
+    "atr_sl_mult": 1.5,
+    "atr_tp_mult": 3.0
+  },
+  "pattern_stats": {
+    "hs_pattern": 30,
+    "hs_valid": 3,
+    "double_pattern": 77,
+    "double_valid": 1,
+    "triple_pattern": 41,
+    "triple_valid": 0,
+    "triangle_pattern": 31,
+    "wedge_pattern": 44,
+    "flag_pattern": 0,
+    "cup_handle_pattern": 5,
+    "cup_handle_valid": 0,
+    "rectangle_pattern": 22,
+    "harmonic_pattern": 2,
+    "harmonic_valid": 0,
+    "elliott_wave3": 11,
+    "elliott_extended_w3": 8,
+    "elliott_impulse": 22,
+    "elliott_corrective": 95,
+    "elliott_valid": 113,
+    "pattern_cluster": 108,
+    "strong_cluster": 56,
+    "pattern_valid": 116
+  },
+  "training_samples": 878,
+  "features": 103,
+  "feature_importance": [
+    {
+      "feature": "hs_strength",
+      "importance": 0.04193883761763573
+    },
+    {
+      "feature": "channel_pattern",
+      "importance": 0.039278849959373474
+    },
+    {
+      "feature": "hs_pattern",
+      "importance": 0.033876433968544006
+    },
+    {
+      "feature": "triangle_pattern",
+      "importance": 0.030265681445598602
+    },
+    {
+      "feature": "double_direction",
+      "importance": 0.02988349087536335
+    },
+    {
+      "feature": "pattern_score",
+      "importance": 0.029828889295458794
+    },
+    {
+      "feature": "ema_200",
+      "importance": 0.028977403417229652
+    },
+    {
+      "feature": "direction_consensus",
+      "importance": 0.027180207893252373
+    },
+    {
+      "feature": "pattern_quality",
+      "importance": 0.02650679275393486
+    },
+    {
+      "feature": "triple_strength",
+      "importance": 0.025852020829916
+    },
+    {
+      "feature": "ema_50",
+      "importance": 0.024294883012771606
+    },
+    {
+      "feature": "ema_20",
+      "importance": 0.024258213117718697
+    },
+    {
+      "feature": "wedge_direction",
+      "importance": 0.02289428748190403
+    },
+    {
+      "feature": "macd_sig",
+      "importance": 0.022724676877260208
+    },
+    {
+      "feature": "pattern_cluster",
+      "importance": 0.022669602185487747
+    },
+    {
+      "feature": "macd",
+      "importance": 0.021974029019474983
+    },
+    {
+      "feature": "dist_to_resistance",
+      "importance": 0.02125888504087925
+    },
+    {
+      "feature": "strong_cluster",
+      "importance": 0.020871849730610847
+    },
+    {
+      "feature": "volatility_regime",
+      "importance": 0.020720340311527252
+    },
+    {
+      "feature": "macd_hist",
+      "importance": 0.0195713359862566
+    }
+  ]
+}

@@ -1,0 +1,314 @@
+{
+  "version": "v3.4_classical",
+  "timeframe": "1W",
+  "walk_forward": {
+    "n_folds": 4,
+    "avg_accuracy": 0.6442,
+    "std_accuracy": 0.0419,
+    "avg_precision": 0.3846,
+    "avg_win_rate": 0,
+    "avg_profit_factor": 0,
+    "consistency_pct": 0.0,
+    "folds": [
+      {
+        "fold": 1,
+        "train_size": 70,
+        "test_size": 26,
+        "purge_size": 1,
+        "period_start": "2024-03-15 00:00:00",
+        "period_end": "2024-09-06 00:00:00",
+        "accuracy": 0.6538,
+        "precision": 0.0,
+        "recall": 0.0,
+        "backtest": {
+          "total_trades": 2,
+          "win_rate": 0.0,
+          "profit_factor": 0.0,
+          "total_return_pct": -0.57,
+          "max_drawdown_pct": -1.09,
+          "avg_win": 0,
+          "avg_loss": 28.43,
+          "expectancy": -28.43,
+          "trades": [
+            {
+              "profit": -49.99999999999995,
+              "exit": "sl",
+              "direction": -1,
+              "entry": 2366.989687368999,
+              "exit_price": 2476.8561211904275
+            },
+            {
+              "profit": -6.864687398834838,
+              "exit": "eod",
+              "direction": -1,
+              "entry": 2494.051659881001,
+              "exit_price": 2509.67993
+            }
+          ]
+        }
+      },
+      {
+        "fold": 2,
+        "train_size": 96,
+        "test_size": 26,
+        "purge_size": 1,
+        "period_start": "2024-09-13 00:00:00",
+        "period_end": "2025-03-07 00:00:00",
+        "accuracy": 0.6538,
+        "precision": 0.5,
+        "recall": 0.3333,
+        "backtest": {
+          "total_trades": 1,
+          "win_rate": 0.0,
+          "profit_factor": 0.0,
+          "total_return_pct": -0.5,
+          "max_drawdown_pct": -0.95,
+          "avg_win": 0,
+          "avg_loss": 50.0,
+          "expectancy": -50.0,
+          "trades": [
+            {
+              "profit": -49.99999999999998,
+              "exit": "sl",
+              "direction": -1,
+              "entry": 2651.4343640506,
+              "exit_price": 2764.4701051220286
+            }
+          ]
+        }
+      },
+      {
+        "fold": 3,
+        "train_size": 122,
+        "test_size": 26,
+        "purge_size": 1,
+        "period_start": "2025-03-14 00:00:00",
+        "period_end": "2025-09-05 00:00:00",
+        "accuracy": 0.6923,
+        "precision": 0.5,
+        "recall": 0.125,
+        "backtest": {
+          "total_trades": 2,
+          "win_rate": 0.0,
+          "profit_factor": 0.0,
+          "total_return_pct": -1.0,
+          "max_drawdown_pct": -1.33,
+          "avg_win": 0,
+          "avg_loss": 49.88,
+          "expectancy": -49.88,
+          "trades": [
+            {
+              "profit": -50.0,
+              "exit": "sl",
+              "direction": -1,
+              "entry": 3249.1350320022,
+              "exit_price": 3431.194388216486
+            },
+            {
+              "profit": -49.75000000000002,
+              "exit": "sl",
+              "direction": -1,
+              "entry": 3273.417645517998,
+              "exit_price": 3512.1276678037125
+            }
+          ]
+        }
+      },
+      {
+        "fold": 4,
+        "train_size": 148,
+        "test_size": 26,
+        "purge_size": 1,
+        "period_start": "2025-09-12 00:00:00",
+        "period_end": "2026-03-06 00:00:00",
+        "accuracy": 0.5769,
+        "precision": 0.5385,
+        "recall": 0.5833,
+        "backtest": {
+          "total_trades": 2,
+          "win_rate": 0.0,
+          "profit_factor": 0.0,
+          "total_return_pct": -0.77,
+          "max_drawdown_pct": -1.41,
+          "avg_win": 0,
+          "avg_loss": 38.36,
+          "expectancy": -38.36,
+          "trades": [
+            {
+              "profit": -50.000000000000014,
+              "exit": "sl",
+              "direction": -1,
+              "entry": 4078.9760216040004,
+              "exit_price": 4332.962448032572
+            },
+            {
+              "profit": -26.712241362823406,
+              "exit": "eod",
+              "direction": -1,
+              "entry": 4899.071505539831,
+              "exit_price": 5084.61862
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "holdout_last_15pct": {
+    "total_trades": 2,
+    "win_rate": 0.0,
+    "profit_factor": 0.0,
+    "total_return_pct": -0.73,
+    "max_drawdown_pct": -5.7,
+    "avg_win": 0,
+    "avg_loss": 36.36,
+    "expectancy": -36.36,
+    "trades": [
+      {
+        "profit": -50.000000000000014,
+        "exit": "sl",
+        "direction": -1,
+        "entry": 4078.9760216040004,
+        "exit_price": 4332.962448032572
+      },
+      {
+        "profit": -22.719771739903273,
+        "exit": "eod",
+        "direction": 1,
+        "entry": 4902.011830481832,
+        "exit_price": 4679.5511
+      }
+    ]
+  },
+  "config": {
+    "interval": "1week",
+    "years": 15,
+    "buy_threshold": 0.58,
+    "sell_threshold": 0.42,
+    "fold_buy_threshold": 0.51,
+    "fold_sell_threshold": 0.49,
+    "resample_rule": "W-FRI",
+    "minutes_per_candle": 10080,
+    "active_for_live": true,
+    "min_candles": 80,
+    "horizon": 2,
+    "pattern_window": 8,
+    "min_return": 0.012,
+    "htf_resample": null,
+    "zigzag_pct": 0.01,
+    "pattern_max_age": 8,
+    "confirmation_bars": 2,
+    "higher_tf": null,
+    "min_pattern_quality": 0.22,
+    "confidence_threshold": 0.7,
+    "atr_sl_mult": 1.5,
+    "atr_tp_mult": 3.0
+  },
+  "pattern_stats": {
+    "hs_pattern": 8,
+    "hs_valid": 2,
+    "double_pattern": 29,
+    "double_valid": 0,
+    "triple_pattern": 13,
+    "triple_valid": 0,
+    "triangle_pattern": 11,
+    "wedge_pattern": 11,
+    "flag_pattern": 0,
+    "cup_handle_pattern": 0,
+    "cup_handle_valid": 0,
+    "rectangle_pattern": 7,
+    "harmonic_pattern": 0,
+    "harmonic_valid": 0,
+    "elliott_wave3": 5,
+    "elliott_extended_w3": 3,
+    "elliott_impulse": 10,
+    "elliott_corrective": 32,
+    "elliott_valid": 38,
+    "pattern_cluster": 36,
+    "strong_cluster": 20,
+    "pattern_valid": 39
+  },
+  "training_samples": 177,
+  "features": 103,
+  "feature_importance": [
+    {
+      "feature": "pattern_quality",
+      "importance": 0.08400794118642807
+    },
+    {
+      "feature": "pattern_count",
+      "importance": 0.07123222202062607
+    },
+    {
+      "feature": "pattern_cluster",
+      "importance": 0.06063292175531387
+    },
+    {
+      "feature": "pattern_score",
+      "importance": 0.052040573209524155
+    },
+    {
+      "feature": "ema_200",
+      "importance": 0.048788346350193024
+    },
+    {
+      "feature": "ema_50",
+      "importance": 0.04605356976389885
+    },
+    {
+      "feature": "sr_position",
+      "importance": 0.037652354687452316
+    },
+    {
+      "feature": "ema_20",
+      "importance": 0.035363852977752686
+    },
+    {
+      "feature": "bars_since_pattern",
+      "importance": 0.03277871757745743
+    },
+    {
+      "feature": "pattern_age",
+      "importance": 0.03134061396121979
+    },
+    {
+      "feature": "trend_strength",
+      "importance": 0.03101699985563755
+    },
+    {
+      "feature": "pattern_freshness",
+      "importance": 0.02995184436440468
+    },
+    {
+      "feature": "volatility_regime",
+      "importance": 0.029866065829992294
+    },
+    {
+      "feature": "rsi",
+      "importance": 0.02976415865123272
+    },
+    {
+      "feature": "dist_to_support",
+      "importance": 0.02817789651453495
+    },
+    {
+      "feature": "volatility",
+      "importance": 0.027649695053696632
+    },
+    {
+      "feature": "atr_pct",
+      "importance": 0.027013065293431282
+    },
+    {
+      "feature": "dist_to_resistance",
+      "importance": 0.02623073011636734
+    },
+    {
+      "feature": "macd_sig",
+      "importance": 0.026046279817819595
+    },
+    {
+      "feature": "adx",
+      "importance": 0.025957424193620682
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "fold_results": [
+    {
+      "fold": 1,
+      "accuracy": 0.5329985652797704,
+      "precision": 0.5282258064516129,
+      "recall": 0.3858615611192931,
+      "backtest": {}
+    },
+    {
+      "fold": 2,
+      "accuracy": 0.5186513629842181,
+      "precision": 0.5763546798029556,
+      "recall": 0.4594240837696335,
+      "backtest": {}
+    },
+    {
+      "fold": 3,
+      "accuracy": 0.5322812051649928,
+      "precision": 0.5337370242214533,
+      "recall": 0.8452054794520548,
+      "backtest": {}
+    },
+    {
+      "fold": 4,
+      "accuracy": 0.5645624103299857,
+      "precision": 0.7037037037037037,
+      "recall": 0.3293333333333333,
+      "backtest": {
+        "total_trades": 63,
+        "win_rate": 0.0,
+        "profit_factor": 0.0,
+        "total_return_pct": -0.18,
+        "max_drawdown_pct": -0.18,
+        "avg_win": 0,
+        "avg_loss": 0.29,
+        "expectancy": -0.29
+      }
+    },
+    {
+      "fold": 5,
+      "accuracy": 0.6449067431850789,
+      "precision": 0.6327868852459017,
+      "recall": 0.7845528455284553,
+      "backtest": {
+        "total_trades": 256,
+        "win_rate": 19.14,
+        "profit_factor": 1.42,
+        "total_return_pct": 1.01,
+        "max_drawdown_pct": -0.78,
+        "avg_win": 7.05,
+        "avg_loss": 1.18,
+        "expectancy": 0.4
+      }
+    }
+  ],
+  "holdout_backtest_last_20pct": {
+    "total_trades": 508,
+    "win_rate": 52.17,
+    "profit_factor": 24.33,
+    "total_return_pct": 13.42,
+    "max_drawdown_pct": -0.07,
+    "avg_win": 5.28,
+    "avg_loss": 0.24,
+    "expectancy": 2.64
+  },
+  "config": {
+    "interval": "45min",
+    "years": 3,
+    "buy_threshold": 0.66,
+    "sell_threshold": 0.34,
+    "fold_buy_threshold": 0.58,
+    "fold_sell_threshold": 0.42,
+    "resample_rule": "45min",
+    "larger_tf": "4h",
+    "htf_features": [
+      "rsi",
+      "trend_filter",
+      "macd_hist"
+    ],
+    "minutes_per_candle": 45,
+    "active_for_live": true,
+    "min_candles": 300
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "fold_results": [
+    {
+      "fold": 1,
+      "accuracy": 0.5151293313811616,
+      "precision": 0.4968152866242038,
+      "recall": 0.4209816157868106,
+      "backtest": {
+        "total_trades": 1,
+        "win_rate": 100.0,
+        "profit_factor": Infinity,
+        "total_return_pct": 0.03,
+        "max_drawdown_pct": -0.03,
+        "avg_win": 2.84,
+        "avg_loss": 0,
+        "expectancy": 0
+      }
+    },
+    {
+      "fold": 2,
+      "accuracy": 0.5016268098259313,
+      "precision": 0.512042818911686,
+      "recall": 0.4583200255509422,
+      "backtest": {}
+    },
+    {
+      "fold": 3,
+      "accuracy": 0.5118757117292988,
+      "precision": 0.5105132962275819,
+      "recall": 0.7982272360999194,
+      "backtest": {}
+    },
+    {
+      "fold": 4,
+      "accuracy": 0.6220107369448511,
+      "precision": 0.7612446087492298,
+      "recall": 0.3895632981239161,
+      "backtest": {
+        "total_trades": 225,
+        "win_rate": 1.33,
+        "profit_factor": 0.42,
+        "total_return_pct": -0.12,
+        "max_drawdown_pct": -0.12,
+        "avg_win": 2.91,
+        "avg_loss": 0.09,
+        "expectancy": -0.05
+      }
+    },
+    {
+      "fold": 5,
+      "accuracy": 0.6346185130958191,
+      "precision": 0.6340628256662201,
+      "recall": 0.6767837279516924,
+      "backtest": {
+        "total_trades": 406,
+        "win_rate": 27.59,
+        "profit_factor": 1.15,
+        "total_return_pct": 0.54,
+        "max_drawdown_pct": -0.45,
+        "avg_win": 3.78,
+        "avg_loss": 1.26,
+        "expectancy": 0.13
+      }
+    }
+  ],
+  "holdout_backtest_last_20pct": {
+    "total_trades": 503,
+    "win_rate": 38.17,
+    "profit_factor": 4.32,
+    "total_return_pct": 5.01,
+    "max_drawdown_pct": -0.2,
+    "avg_win": 3.39,
+    "avg_loss": 0.48,
+    "expectancy": 1.0
+  },
+  "config": {
+    "interval": "5min",
+    "years": 2,
+    "buy_threshold": 0.67,
+    "sell_threshold": 0.33,
+    "fold_buy_threshold": 0.6,
+    "fold_sell_threshold": 0.4,
+    "max_trades_per_day": 10,
+    "resample_rule": "5min",
+    "larger_tf": "1h",
+    "htf_features": [
+      "rsi",
+      "trend_filter",
+      "macd_hist",
+      "market_structure"
+    ],
+    "minutes_per_candle": 5,
+    "active_for_live": true,
+    "min_candles": 500
+  }
+}

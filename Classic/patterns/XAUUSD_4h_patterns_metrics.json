@@ -1,0 +1,220 @@
+{
+  "version": "v3.4_classical",
+  "timeframe": "4h",
+  "walk_forward": {
+    "n_folds": 6,
+    "avg_accuracy": 0.6515,
+    "std_accuracy": 0.1305,
+    "avg_precision": 0.2762,
+    "avg_win_rate": 0,
+    "avg_profit_factor": 0,
+    "consistency_pct": 0.0,
+    "folds": [
+      {
+        "fold": 1,
+        "train_size": 2227,
+        "test_size": 556,
+        "purge_size": 55,
+        "period_start": "2024-05-06 08:00:00",
+        "period_end": "2024-09-11 20:00:00",
+        "accuracy": 0.4137,
+        "precision": 0.2,
+        "recall": 0.6034,
+        "backtest": {}
+      },
+      {
+        "fold": 2,
+        "train_size": 2783,
+        "test_size": 556,
+        "purge_size": 55,
+        "period_start": "2024-09-12 00:00:00",
+        "period_end": "2025-01-20 16:00:00",
+        "accuracy": 0.8058,
+        "precision": 0.3878,
+        "recall": 0.1959,
+        "backtest": {}
+      },
+      {
+        "fold": 3,
+        "train_size": 3339,
+        "test_size": 556,
+        "purge_size": 55,
+        "period_start": "2025-01-20 20:00:00",
+        "period_end": "2025-05-26 00:00:00",
+        "accuracy": 0.7032,
+        "precision": 0.4,
+        "recall": 0.0122,
+        "backtest": {}
+      },
+      {
+        "fold": 4,
+        "train_size": 3895,
+        "test_size": 556,
+        "purge_size": 55,
+        "period_start": "2025-05-26 04:00:00",
+        "period_end": "2025-09-12 12:00:00",
+        "accuracy": 0.759,
+        "precision": 0.2394,
+        "recall": 0.1753,
+        "backtest": {}
+      },
+      {
+        "fold": 5,
+        "train_size": 4451,
+        "test_size": 556,
+        "purge_size": 55,
+        "period_start": "2025-09-12 16:00:00",
+        "period_end": "2026-01-01 16:00:00",
+        "accuracy": 0.6619,
+        "precision": 0.1154,
+        "recall": 0.0179,
+        "backtest": {}
+      },
+      {
+        "fold": 6,
+        "train_size": 5007,
+        "test_size": 506,
+        "purge_size": 55,
+        "period_start": "2026-01-01 20:00:00",
+        "period_end": "2026-03-28 00:00:00",
+        "accuracy": 0.5652,
+        "precision": 0.3149,
+        "recall": 0.3725,
+        "backtest": {}
+      }
+    ]
+  },
+  "holdout_last_15pct": {},
+  "config": {
+    "interval": "4h",
+    "years": 5,
+    "buy_threshold": 0.67,
+    "sell_threshold": 0.33,
+    "fold_buy_threshold": 0.51,
+    "fold_sell_threshold": 0.49,
+    "resample_rule": "4h",
+    "minutes_per_candle": 240,
+    "active_for_live": true,
+    "min_candles": 200,
+    "horizon": 3,
+    "pattern_window": 12,
+    "min_return": 0.005,
+    "htf_resample": "1d",
+    "zigzag_pct": 0.006,
+    "pattern_max_age": 12,
+    "confirmation_bars": 3,
+    "higher_tf": "1d",
+    "min_pattern_quality": 0.28,
+    "confidence_threshold": 0.7,
+    "atr_sl_mult": 1.5,
+    "atr_tp_mult": 3.0
+  },
+  "pattern_stats": {
+    "hs_pattern": 82,
+    "hs_valid": 9,
+    "double_pattern": 363,
+    "double_valid": 9,
+    "triple_pattern": 166,
+    "triple_valid": 2,
+    "triangle_pattern": 142,
+    "wedge_pattern": 235,
+    "flag_pattern": 2,
+    "cup_handle_pattern": 50,
+    "cup_handle_valid": 0,
+    "rectangle_pattern": 93,
+    "harmonic_pattern": 7,
+    "harmonic_valid": 0,
+    "elliott_wave3": 63,
+    "elliott_extended_w3": 34,
+    "elliott_impulse": 126,
+    "elliott_corrective": 480,
+    "elliott_valid": 572,
+    "pattern_cluster": 487,
+    "strong_cluster": 218,
+    "pattern_valid": 578
+  },
+  "training_samples": 5568,
+  "features": 103,
+  "feature_importance": [
+    {
+      "feature": "elliott_bullish",
+      "importance": 0.04014657437801361
+    },
+    {
+      "feature": "double_direction",
+      "importance": 0.03040747158229351
+    },
+    {
+      "feature": "ema_200",
+      "importance": 0.024483483284711838
+    },
+    {
+      "feature": "double_pattern",
+      "importance": 0.021883463487029076
+    },
+    {
+      "feature": "dow",
+      "importance": 0.021859921514987946
+    },
+    {
+      "feature": "wedge_direction",
+      "importance": 0.020977722480893135
+    },
+    {
+      "feature": "ema_50",
+      "importance": 0.02092260681092739
+    },
+    {
+      "feature": "hs_pattern",
+      "importance": 0.02067835070192814
+    },
+    {
+      "feature": "triple_direction",
+      "importance": 0.01991875097155571
+    },
+    {
+      "feature": "hour",
+      "importance": 0.0198103878647089
+    },
+    {
+      "feature": "direction_consensus",
+      "importance": 0.018660275265574455
+    },
+    {
+      "feature": "pattern_cluster",
+      "importance": 0.018023289740085602
+    },
+    {
+      "feature": "ema_20",
+      "importance": 0.017895886674523354
+    },
+    {
+      "feature": "cup_handle_strength",
+      "importance": 0.017783280462026596
+    },
+    {
+      "feature": "channel_pattern",
+      "importance": 0.017205681651830673
+    },
+    {
+      "feature": "wedge_strength",
+      "importance": 0.017152132466435432
+    },
+    {
+      "feature": "channel_strength",
+      "importance": 0.01706422120332718
+    },
+    {
+      "feature": "hour_cos",
+      "importance": 0.01664470136165619
+    },
+    {
+      "feature": "elliott_strength",
+      "importance": 0.016189200803637505
+    },
+    {
+      "feature": "trend_strength",
+      "importance": 0.016130438074469566
+    }
+  ]
+}

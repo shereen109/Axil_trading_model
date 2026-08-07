@@ -1,0 +1,256 @@
+{
+  "version": "v3.4_classical",
+  "timeframe": "2h",
+  "walk_forward": {
+    "n_folds": 6,
+    "avg_accuracy": 0.6128,
+    "std_accuracy": 0.0873,
+    "avg_precision": 0.3384,
+    "avg_win_rate": 0,
+    "avg_profit_factor": 0,
+    "consistency_pct": 0.0,
+    "folds": [
+      {
+        "fold": 1,
+        "train_size": 4411,
+        "test_size": 1103,
+        "purge_size": 110,
+        "period_start": "2024-05-06 14:00:00",
+        "period_end": "2024-09-11 18:00:00",
+        "accuracy": 0.6809,
+        "precision": 0.3128,
+        "recall": 0.2186,
+        "backtest": {}
+      },
+      {
+        "fold": 2,
+        "train_size": 5514,
+        "test_size": 1103,
+        "purge_size": 110,
+        "period_start": "2024-09-11 20:00:00",
+        "period_end": "2025-01-22 04:00:00",
+        "accuracy": 0.5068,
+        "precision": 0.2937,
+        "recall": 0.6376,
+        "backtest": {}
+      },
+      {
+        "fold": 3,
+        "train_size": 6617,
+        "test_size": 1103,
+        "purge_size": 110,
+        "period_start": "2025-01-22 06:00:00",
+        "period_end": "2025-05-28 04:00:00",
+        "accuracy": 0.6636,
+        "precision": 0.3478,
+        "recall": 0.0686,
+        "backtest": {}
+      },
+      {
+        "fold": 4,
+        "train_size": 7720,
+        "test_size": 1103,
+        "purge_size": 110,
+        "period_start": "2025-05-28 06:00:00",
+        "period_end": "2025-09-16 00:00:00",
+        "accuracy": 0.738,
+        "precision": 0.3525,
+        "recall": 0.17,
+        "backtest": {}
+      },
+      {
+        "fold": 5,
+        "train_size": 8823,
+        "test_size": 1103,
+        "purge_size": 110,
+        "period_start": "2025-09-16 02:00:00",
+        "period_end": "2026-01-03 10:00:00",
+        "accuracy": 0.5122,
+        "precision": 0.334,
+        "recall": 0.5014,
+        "backtest": {}
+      },
+      {
+        "fold": 6,
+        "train_size": 9926,
+        "test_size": 993,
+        "purge_size": 110,
+        "period_start": "2026-01-03 12:00:00",
+        "period_end": "2026-03-28 04:00:00",
+        "accuracy": 0.575,
+        "precision": 0.3898,
+        "recall": 0.7441,
+        "backtest": {
+          "total_trades": 1,
+          "win_rate": 0.0,
+          "profit_factor": 0.0,
+          "total_return_pct": -0.18,
+          "max_drawdown_pct": -5.09,
+          "avg_win": 0,
+          "avg_loss": 18.44,
+          "expectancy": -18.44,
+          "trades": [
+            {
+              "profit": -18.439688364578096,
+              "exit": "sl",
+              "direction": 1,
+              "entry": 5070.022001775027,
+              "exit_price": 4883.042750346455
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "holdout_last_15pct": {
+    "total_trades": 1,
+    "win_rate": 100.0,
+    "profit_factor": Infinity,
+    "total_return_pct": 1.0,
+    "max_drawdown_pct": -0.5,
+    "avg_win": 100.0,
+    "avg_loss": 0,
+    "expectancy": 0,
+    "trades": [
+      {
+        "profit": 99.99999999999996,
+        "exit": "tp",
+        "direction": -1,
+        "entry": 5066.980900965026,
+        "exit_price": 4693.022398107883
+      }
+    ]
+  },
+  "config": {
+    "interval": "2h",
+    "years": 4,
+    "buy_threshold": 0.65,
+    "sell_threshold": 0.35,
+    "fold_buy_threshold": 0.52,
+    "fold_sell_threshold": 0.48,
+    "resample_rule": "2h",
+    "minutes_per_candle": 120,
+    "active_for_live": true,
+    "min_candles": 300,
+    "horizon": 4,
+    "pattern_window": 12,
+    "min_return": 0.004,
+    "htf_resample": "1d",
+    "zigzag_pct": 0.006,
+    "pattern_max_age": 12,
+    "confirmation_bars": 3,
+    "higher_tf": "1d",
+    "min_pattern_quality": 0.3,
+    "confidence_threshold": 0.7,
+    "atr_sl_mult": 1.5,
+    "atr_tp_mult": 3.0
+  },
+  "pattern_stats": {
+    "hs_pattern": 99,
+    "hs_valid": 8,
+    "double_pattern": 501,
+    "double_valid": 8,
+    "triple_pattern": 211,
+    "triple_valid": 2,
+    "triangle_pattern": 198,
+    "wedge_pattern": 363,
+    "flag_pattern": 3,
+    "cup_handle_pattern": 69,
+    "cup_handle_valid": 0,
+    "rectangle_pattern": 147,
+    "harmonic_pattern": 18,
+    "harmonic_valid": 0,
+    "elliott_wave3": 87,
+    "elliott_extended_w3": 49,
+    "elliott_impulse": 174,
+    "elliott_corrective": 721,
+    "elliott_valid": 847,
+    "pattern_cluster": 673,
+    "strong_cluster": 282,
+    "pattern_valid": 853
+  },
+  "training_samples": 11029,
+  "features": 103,
+  "feature_importance": [
+    {
+      "feature": "elliott_bullish",
+      "importance": 0.036984894424676895
+    },
+    {
+      "feature": "elliott_corrective",
+      "importance": 0.03686056286096573
+    },
+    {
+      "feature": "double_direction",
+      "importance": 0.03240429610013962
+    },
+    {
+      "feature": "dow",
+      "importance": 0.02374243550002575
+    },
+    {
+      "feature": "ema_200",
+      "importance": 0.021438179537653923
+    },
+    {
+      "feature": "elliott_valid",
+      "importance": 0.020121874287724495
+    },
+    {
+      "feature": "elliott_impulse",
+      "importance": 0.019603095948696136
+    },
+    {
+      "feature": "dist_to_prz",
+      "importance": 0.01954803057014942
+    },
+    {
+      "feature": "pattern_valid",
+      "importance": 0.019344892352819443
+    },
+    {
+      "feature": "ema_20",
+      "importance": 0.019164197146892548
+    },
+    {
+      "feature": "ema_50",
+      "importance": 0.018553555011749268
+    },
+    {
+      "feature": "trend_strength",
+      "importance": 0.01807384379208088
+    },
+    {
+      "feature": "hs_direction",
+      "importance": 0.01758747175335884
+    },
+    {
+      "feature": "hour",
+      "importance": 0.017539331689476967
+    },
+    {
+      "feature": "pattern_age",
+      "importance": 0.016077738255262375
+    },
+    {
+      "feature": "macd_sig",
+      "importance": 0.015765754505991936
+    },
+    {
+      "feature": "pattern_freshness",
+      "importance": 0.015719611197710037
+    },
+    {
+      "feature": "direction_consensus",
+      "importance": 0.015711650252342224
+    },
+    {
+      "feature": "triangle_pattern",
+      "importance": 0.015601028688251972
+    },
+    {
+      "feature": "macd",
+      "importance": 0.015444297343492508
+    }
+  ]
+}

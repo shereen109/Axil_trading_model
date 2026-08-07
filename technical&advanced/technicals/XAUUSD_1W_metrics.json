@@ -1,0 +1,60 @@
+{
+  "fold_results": [
+    {
+      "fold": 1,
+      "accuracy": 0.5,
+      "precision": 0.6666666666666666,
+      "recall": 0.6,
+      "backtest": {
+        "total_trades": 4,
+        "win_rate": 100.0,
+        "profit_factor": Infinity,
+        "total_return_pct": 1.23,
+        "max_drawdown_pct": -0.08,
+        "avg_win": 30.68,
+        "avg_loss": 0,
+        "expectancy": 0
+      }
+    },
+    {
+      "fold": 2,
+      "accuracy": 0.6428571428571429,
+      "precision": 1.0,
+      "recall": 0.5454545454545454,
+      "backtest": {
+        "total_trades": 3,
+        "win_rate": 100.0,
+        "profit_factor": Infinity,
+        "total_return_pct": 0.95,
+        "max_drawdown_pct": -0.01,
+        "avg_win": 31.66,
+        "avg_loss": 0,
+        "expectancy": 0
+      }
+    }
+  ],
+  "holdout_backtest_last_20pct": {
+    "total_trades": 3,
+    "win_rate": 66.67,
+    "profit_factor": 315.39,
+    "total_return_pct": 1.92,
+    "max_drawdown_pct": -0.0,
+    "avg_win": 96.41,
+    "avg_loss": 0.61,
+    "expectancy": 64.07
+  },
+  "config": {
+    "interval": "1week",
+    "years": 15,
+    "buy_threshold": 0.55,
+    "sell_threshold": 0.45,
+    "fold_buy_threshold": 0.52,
+    "fold_sell_threshold": 0.48,
+    "resample_rule": "W-FRI",
+    "larger_tf": null,
+    "htf_features": [],
+    "minutes_per_candle": 10080,
+    "active_for_live": true,
+    "min_candles": 50
+  }
+}

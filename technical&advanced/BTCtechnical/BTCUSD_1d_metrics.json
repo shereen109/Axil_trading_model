@@ -1,0 +1,113 @@
+{
+  "symbol": "BTC/USD",
+  "timeframe": "1d",
+  "n_features_selected": 50,
+  "n_features_total": 132,
+  "tp1_rate_train": 0.2924,
+  "tp4_rate_train": 0.0292,
+  "sl_rate_train": 0.1754,
+  "fold_results": [
+    {
+      "fold": 1,
+      "accuracy": 0.6988304093567251,
+      "precision": 0.0,
+      "recall": 0.0,
+      "backtest": {}
+    },
+    {
+      "fold": 2,
+      "accuracy": 0.6228070175438597,
+      "precision": 0.0,
+      "recall": 0.0,
+      "backtest": {
+        "total_trades": 8,
+        "win_rate": 12.5,
+        "profit_factor": 0.18,
+        "total_return_pct": -0.11,
+        "final_capital": 9989.15,
+        "max_drawdown_pct": -0.21,
+        "avg_win_usd": 2.4,
+        "avg_loss_usd": 1.89,
+        "expectancy_usd": -1.36,
+        "tp1_hits": 1,
+        "tp2_hits": 0,
+        "tp3_hits": 0,
+        "tp4_hits": 0,
+        "sl_hits": 7,
+        "sl_rate": 87.5
+      }
+    },
+    {
+      "fold": 3,
+      "accuracy": 0.7192982456140351,
+      "precision": 0.0,
+      "recall": 0.0,
+      "backtest": {}
+    },
+    {
+      "fold": 4,
+      "accuracy": 0.5467836257309941,
+      "precision": 0.19626168224299065,
+      "recall": 0.23333333333333334,
+      "backtest": {
+        "total_trades": 16,
+        "win_rate": 43.75,
+        "profit_factor": 0.78,
+        "total_return_pct": -0.14,
+        "final_capital": 9986.06,
+        "max_drawdown_pct": -0.8,
+        "avg_win_usd": 7.02,
+        "avg_loss_usd": 7.02,
+        "expectancy_usd": -0.88,
+        "tp1_hits": 2,
+        "tp2_hits": 2,
+        "tp3_hits": 2,
+        "tp4_hits": 1,
+        "sl_hits": 9,
+        "sl_rate": 56.2
+      }
+    }
+  ],
+  "holdout_backtest_last_20pct": {
+    "total_trades": 12,
+    "win_rate": 66.67,
+    "profit_factor": 460.56,
+    "total_return_pct": 0.65,
+    "final_capital": 10064.58,
+    "max_drawdown_pct": -0.26,
+    "avg_win_usd": 8.08,
+    "avg_loss_usd": 0.04,
+    "expectancy_usd": 5.38,
+    "tp1_hits": 3,
+    "tp2_hits": 2,
+    "tp3_hits": 2,
+    "tp4_hits": 1,
+    "sl_hits": 4,
+    "sl_rate": 33.3
+  },
+  "config": {
+    "interval": "1d",
+    "years": 6,
+    "buy_threshold": 0.5,
+    "sell_threshold": 0.45,
+    "fold_buy_threshold": 0.48,
+    "fold_sell_threshold": 0.5,
+    "max_trades_per_day": null,
+    "resample_rule": "1D",
+    "larger_tf": "1W",
+    "htf_features": [
+      "rsi",
+      "trend_filter",
+      "market_structure"
+    ],
+    "minutes_per_candle": 1440,
+    "min_candles": 120,
+    "horizon": 15,
+    "atr_mult_sl": 3.5,
+    "atr_mult_tp1": 2.8,
+    "atr_mult_tp2": 4.5,
+    "atr_mult_tp3": 6.5,
+    "atr_mult_tp4": 10.0,
+    "min_trades_fold": 2
+  }
+}
